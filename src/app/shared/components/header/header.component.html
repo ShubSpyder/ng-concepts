@@ -1,0 +1,17 @@
+<header class="header">
+    <div class="logo">Angular Concepts</div>
+    <nav class="nav">
+        <div class="dropdown">
+            <button class="dropdown-toggle" (click)="toggleDropdown()">
+                Implementations ▼
+            </button>
+            @if (isDropdownOpen) {
+            <div class="dropdown-menu">
+                <a routerLink="/custom-directives" class="dropdown-item">Custom Directives</a>
+                <a routerLink="/custom-pipes" class="dropdown-item">Custom Pipes</a>
+                <a routerLink="/unit-testing" class="dropdown-item">Unit testing</a>
+            </div>
+            }
+        </div>
+    </nav>
+</header>

@@ -1,0 +1,19 @@
+<h3>Custom Structural Directive - <code>showElement</code></h3>
+<div *showElement="isVisible; else elseBlock">
+  This content is visible because <code>isVisible</code> is true.
+</div>
+<ng-template #elseBlock>
+  <div>This is the else block when <code>isVisible</code> is false.</div>
+</ng-template>
+
+<button (click)="toggleVisibility()">Toggle Visibility</button>
+
+
+
+<h3>Input Directive - <code>noSpecialCharacter</code></h3>
+<input type="text" noSpecialCharacter placeholder="Type here - only letters, numbers, and spaces allowed">
+
+<h3>Custom Input Directive - <code>noSpecialCharacter</code></h3>
+
+<p>Try typing special characters in the input box below:</p>
+<input type="text" noSpecialCharacter placeholder="No special characters allowed">

@@ -1,0 +1,14 @@
+<button (click)="fetchData()">Fetch Data</button>
+
+@if(data) {
+<input type="search" [(ngModel)]="searchTerm" (ngModelChange)="filterData()">
+}
+
+
+@if(data){
+<ul>
+    @for(item of filteredData; track $index){
+    <li>{{ item.title }} </li>
+    }
+</ul>
+}

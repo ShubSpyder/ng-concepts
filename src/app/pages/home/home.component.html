@@ -1,0 +1,39 @@
+<div class="home-container">
+    <section class="hero">
+        <h1>Angular Learning Journey</h1>
+        <p class="subtitle">Exploring concepts, experimenting with code, and building cool things.</p>
+    </section>
+
+    <section class="content">
+        <div class="card">
+            <h2>Goal</h2>
+            <p>To master Angular fundamentals including Components, Directives, Pipes, and State Management.</p>
+        </div>
+
+        <div class="card">
+            <h2>Progress</h2>
+            <p>Currently working on project structure and navigation components.</p>
+        </div>
+
+        <div class="card">
+            <h2>Next Steps</h2>
+            <p>Dive deep into detailed concepts and implement complex features.</p>
+        </div>
+    </section>
+
+    <section class="roadmap-section">
+        <h2>Senior Angular Developer Roadmap</h2>
+        <div class="roadmap-grid">
+            @for (category of roadmap; track category.title) {
+            <div class="roadmap-card">
+                <h3>{{ category.title }}</h3>
+                <ul>
+                    @for (item of category.items; track item) {
+                    <li>{{ item }}</li>
+                    }
+                </ul>
+            </div>
+            }
+        </div>
+    </section>
+</div>
