@@ -1,0 +1,20 @@
+<h3>Map Operator</h3>
+
+<div class="row">
+    <div class="col-md-6">
+        <strong>Original Data (of(1,2,3,4,5)):</strong>
+        @for (item of data$ | async; track $index) {
+        <div>
+            {{ item }}
+        </div>
+        }
+    </div>
+    <div class="col-md-6">
+        <strong>Mapped Data (x * 10):</strong>
+        @for (item of mappedData$ | async; track $index) {
+        <div>
+            {{ item }}
+        </div>
+        }
+    </div>
+</div>

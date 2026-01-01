@@ -1,0 +1,13 @@
+<div class="p-4">
+    <h3 class="text-xl font-bold mb-4">Filter Operator</h3>
+
+    <div class="mb-4">
+        <h3 class="font-semibold">Source Data:</h3>
+        <p>{{ sourceValues$ | async | json }}</p>
+    </div>
+
+    <div>
+        <h3 class="font-semibold">Filtered Data (Even numbers):</h3>
+        <p>{{ filteredData$ | async | json }}</p>
+    </div>
+</div>

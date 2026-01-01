@@ -3,6 +3,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { CustomDirectivesComponent } from './pages/custom-directives/custom-directives.component';
 import { CustomPipesComponent } from './pages/custom-pipes/custom-pipes.component';
 import { UnitTestingComponent } from './pages/unit-testing/unit-testing.component';
+import { RxjsImplementationComponent } from './pages/rxjs-implementation/rxjs-implementation.component';
 
 export const routes: Routes = [
     {
@@ -20,5 +21,9 @@ export const routes: Routes = [
     {
         path: 'unit-testing',
         component: UnitTestingComponent
+    },
+    {
+        path: 'rxjs-implementation',
+        component: RxjsImplementationComponent
     }
 ];
