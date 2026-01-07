@@ -26,7 +26,7 @@
         <div class="roadmap-grid">
             @for (category of roadmap; track category.title) {
             <div class="roadmap-card">
-                <h3>{{ category.title }}</h3>
+                <h3 class="title">{{ category.title }}</h3>
                 <ul>
                     @for (item of category.items; track item) {
                     <li>{{ item }}</li>

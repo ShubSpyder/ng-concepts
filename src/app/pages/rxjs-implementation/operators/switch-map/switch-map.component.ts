@@ -19,6 +19,15 @@ export class SwitchMapComponent {
 
   switchMapService = inject(SwitchMapService);
 
+  ngOnInit(): void {
+    console.log('ngOnInit');
+
+    let nums$ = of(1, 2, 3, 4, 5);
+    nums$.pipe(switchMap(num => timer(1000).pipe(map(() => num)))).subscribe(num => {
+      console.log(num);
+    });
+  }
+
 
   onClick() {
     this.text$.pipe(switchMap(text => timer(1000).pipe(map(() => text + ' World')))).subscribe(text => {

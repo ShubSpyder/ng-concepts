@@ -1,0 +1,11 @@
+<div class="container">
+    <h3 class="title">Simple mergeMap Example</h3>
+    <button (click)="start()">Start Processing ['A', 'B', 'C']</button>
+
+    <div class="result-list" *ngIf="results.length">
+        <h4>Results:</h4>
+        <ul>
+            <li *ngFor="let result of results">{{ result }}</li>
+        </ul>
+    </div>
+</div>
